@@ -1,0 +1,5 @@
+{
+  "name": "ProfAI - University Essay Grader",
+  "description": "A comprehensive essay grading tool that provides university-level feedback, detailed scoring rubrics, and actionable improvements using the Gemini Pro model.",
+  "requestFramePermissions": []
+}
