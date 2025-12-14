@@ -47,7 +47,7 @@ const EssayInput: React.FC<EssayInputProps> = ({ onSubmit, isLoading }) => {
           value={prompt}
           onChange={(e) => setPrompt(e.target.value)}
           placeholder="e.g. Discuss the socio-economic impacts of..."
-          className="w-full rounded-md border-slate-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm border p-2"
+          className="w-full rounded-md bg-slate-900 border-slate-700 text-slate-100 placeholder-slate-400 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm border p-2 transition-colors"
           disabled={isLoading}
         />
       </div>
@@ -57,11 +57,11 @@ const EssayInput: React.FC<EssayInputProps> = ({ onSubmit, isLoading }) => {
           value={text}
           onChange={(e) => setText(e.target.value)}
           placeholder="Paste your essay here..."
-          className="flex-grow w-full resize-none rounded-md border-slate-300 border p-4 font-serif text-slate-700 leading-relaxed focus:border-indigo-500 focus:ring-indigo-500 min-h-[300px] sm:min-h-[400px]"
+          className="flex-grow w-full resize-none rounded-md bg-slate-900 border-slate-700 p-4 font-serif text-slate-100 placeholder-slate-400 leading-relaxed focus:border-indigo-500 focus:ring-indigo-500 min-h-[300px] sm:min-h-[400px] transition-colors"
           disabled={isLoading}
         />
         
-        <div className="absolute bottom-4 right-4 text-xs text-slate-400 bg-white/80 px-2 py-1 rounded backdrop-blur-sm border border-slate-100">
+        <div className="absolute bottom-4 right-4 text-xs text-slate-300 bg-slate-800/90 px-2 py-1 rounded backdrop-blur-sm border border-slate-700 shadow-sm">
           {wordCount} words
         </div>
       </div>
